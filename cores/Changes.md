@@ -1,3 +1,15 @@
+**minimig_mist_rtg_250324.rbf**
+- Major update, refer to git history for changes
+
+**apple2e_250315.rbf**
+- Support saving/loading of CFFA's EEPROM
+- Allow selecting the IDE image in the OSD (need fw 250315)
+- AppleMouse // support in Slot 5
+
+**zxspectrum_250315.rbf**
+- Add profile strings to quicly select a machine
+- Connect the AY PIO used for RS232 to UART RX/TX pins
+
 **plusToo_250310.rbf**
 - Fix scancode for up-arrow and numpad key mappings (by robinsonb5)
 - Fix sound with direct VIA control (by darylrichards)
