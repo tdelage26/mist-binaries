@@ -1,3 +1,11 @@
+**Amstrad_260109.rbf**
+- Dandantor mini-ROM support
+
+**bbc_260109.rbf**
+- ACIA with partial Serproc support
+- Music5000 synthesizer (from David Banks)
+- Two disk drive support
+
 **C64_250908.rbf**
 - IDX file support (need new firmware)
 - Profile strings for quick machine selection
