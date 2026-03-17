@@ -1,0 +1,57 @@
+<misterromdescription>
+    <name>Grasspin (Zilec)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <platform>Arcade</platform>
+    <series></series>
+    <year>1983</year>
+    <manufacturer>Zilec Electronics / Jaleco</manufacturer>
+    <category>Maze</category>
+    <setname>grasspin</setname>
+    <mameversion>0220</mameversion>
+    <rbf>BluePrint</rbf>
+
+    <about></about>
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>no</flip>
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Jump/Action,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+    <switches base="8" default="03,60" page_id="1" page_name="Switches" mod="1">
+        <!-- DILSW1 bits -> MRA bit = 8+N; DILSW2 bits -> MRA bit = N -->
+        <dip bits="13,14" name="Coinage"      ids="2C/1CR,1C/2CR,2C/3CR,1C/1CR"/>
+        <dip bits="15"    name="Freeze"       ids="Off,On"/>
+        <dip bits="0,1"   name="Lives"        ids="2,5,4,3"/>
+        <dip bits="5"     name="Cabinet"      ids="Upright,Cocktail"/>
+        <dip bits="6"     name="Flip Screen"  ids="Off,On"/>
+    </switches>
+
+    <rom index="0" md5="none" zip="grasspin.zip" address="0x0000">
+        <!-- Main CPU ROMs (5x 4KB = 20KB) -->
+        <part crc="6fd50509" name="prom_1.4b"/>
+        <part crc="cd319007" name="jaleco-2.4c"/>
+        <part crc="ac73ccc2" name="jaleco-3.4d"/>
+        <part crc="41f6279d" name="jaleco-4.4f"/>
+        <part crc="d20aead9" name="jaleco-5.4h"/>
+        <!-- main6 slot padding (Grasspin uses only 5 CPU ROMs) -->
+        <part repeat="0x1000">FF</part>
+        <!-- Tile ROMs (2x 4KB = 8KB) -->
+        <part crc="bccca24c" name="jaleco-9.4p"/>
+        <part crc="9d6185ca" name="jaleco-8.3p"/>
+        <!-- Sprite ROMs (3x 4KB = 12KB, R/B/G bitplanes) -->
+        <part crc="3a0765c6" name="jaleco-10.5p"/>
+        <part crc="cccfbeb4" name="jaleco-11.6p"/>
+        <part crc="615b3299" name="jaleco-12.7p"/>
+        <!-- Sound CPU ROMs (2x 4KB = 8KB) -->
+        <part crc="f58bf3b0" name="jaleco-6.4j"/>
+        <part crc="2d587653" name="jaleco-7.4l"/>
+    </rom>
+
+    <mratimestamp>20260221000000</mratimestamp>
+    <rom index="1"><part>01</part></rom>
+
+</misterromdescription>
